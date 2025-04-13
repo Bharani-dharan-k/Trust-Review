@@ -120,14 +120,7 @@ npm start
 
 ---
 
-## 👥 Team Members
 
-- Bharani – AI Model, Flask API, Frontend Integration  
-- [Add other teammates if any]
 
----
 
-## 📜 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
