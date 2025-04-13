@@ -1,0 +1,28 @@
+/* Ensure the page takes full width and height */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+}
+
+/* Make App stretch full height and use flex column */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main wrapper for layout (optional) */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Let content grow to fill space */
+main {
+  flex: 1;
+}
+

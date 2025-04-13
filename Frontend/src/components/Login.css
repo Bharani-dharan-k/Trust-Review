@@ -1,0 +1,256 @@
+/* Reset */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Font & Transitions */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Light Mode (Default) */
+  body.light-mode {
+    background-color: #f4f6f8;
+    color: #000;
+  }
+  
+  .light-mode .auth-card,
+  .light-mode .navbar,
+  .light-mode .footer,
+  .light-mode .page-section {
+    background-color: #ffffff;
+    color: #000;
+  }
+  
+  .light-mode .input-field {
+    background-color: #f9f9f9;
+    border-color: #ccc;
+  }
+  
+  .light-mode .checkbox-label,
+  .light-mode .auth-link a {
+    color: #333;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  .dark-mode .auth-card,
+  .dark-mode .navbar,
+  .dark-mode .footer,
+  .dark-mode .page-section {
+    background-color: #1e1e1e;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05);
+  }
+  
+  .dark-mode .input-field {
+    background-color: #2a2a2a;
+    border-color: #444;
+  }
+  
+  .dark-mode .input-field svg {
+    fill: #ccc;
+  }
+  
+  .dark-mode .checkbox-label,
+  .dark-mode .auth-link a {
+    color: #ccc;
+  }
+  
+  .dark-mode .forgot-password {
+    color: #4dabf7;
+  }
+  
+  .dark-mode .subtitle {
+    color: #bbb;
+  }
+  
+  .dark-mode input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Scrollbar Styling for Dark Mode */
+  body.dark-mode::-webkit-scrollbar {
+    width: 10px;
+  }
+  body.dark-mode::-webkit-scrollbar-track {
+    background: #1e1e1e;
+  }
+  body.dark-mode::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 6px;
+  }
+  
+  /* Login Page Wrapper */
+  .login-page {
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+    min-height: calc(100vh - 160px);
+    box-sizing: border-box;
+  }
+  
+  /* Login Card */
+  .auth-card {
+    padding: 30px 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
+    animation: fadeIn 0.6s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Logo */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-container svg {
+    height: 40px;
+    width: auto;
+  }
+  
+  /* Typography */
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  
+  /* Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .input-field {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+  }
+  
+  .input-field svg {
+    margin-right: 10px;
+    fill: #888;
+  }
+  
+  .input-field input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  /* Checkbox */
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .checkbox-container input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 4px;
+    height: 8px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  /* Extra UI */
+  .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .checkbox-label {
+    font-size: 14px;
+  }
+  
+  .forgot-password {
+    font-size: 14px;
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .auth-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .auth-link {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .auth-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .auth-link a:hover {
+    text-decoration: underline;
+  }
+  

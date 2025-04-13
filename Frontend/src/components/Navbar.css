@@ -1,0 +1,211 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo Section */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-img {
+  height: 45px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2563eb;
+  transition: all 0.3s ease;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+/* Navbar Actions */
+.nav-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Login Button */
+.login-btn {
+  background-color: transparent;
+  border: 1.5px solid #2563eb;
+  color: #2563eb;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #2563eb;
+  color: white;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
+}
+
+/* Get Started Button */
+.get-started-btn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background: linear-gradient(135deg, #1e40af, #1d4ed8);
+  box-shadow: 0 2px 10px rgba(29, 78, 216, 0.3);
+}
+
+/* Dark Mode Styles */
+.navbar.dark-mode {
+  background-color: #1a1a1a;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+}
+
+.dark-mode .logo-text {
+  color: #3b82f6;
+}
+
+.dark-mode .nav-links a {
+  color: #e5e7eb;
+}
+
+.dark-mode .nav-links a:hover {
+  color: #3b82f6;
+}
+
+.dark-mode .login-btn {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.dark-mode .login-btn:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.dark-mode .get-started-btn {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.dark-mode .get-started-btn:hover {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 8px 16px;
+  }
+
+  .logo-img {
+    height: 36px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .login-btn,
+  .get-started-btn {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .lang-selector {
+    font-size: 14px;
+    min-width: 120px;
+    padding: 6px 10px;
+    z-index: 1002;
+  }
+}
+
+/* Translate Widget Styling */
+.translate-widget {
+  margin-right: 6px;
+  transform: scale(0.85);
+  transform-origin: right;
+}
+
+.goog-te-gadget .goog-te-combo {
+  padding: 5px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  background-color: white;
+  color: black;
+}
+
+/* Hide Google Translate Banner, Tooltip, Balloon, etc */
+.goog-te-banner-frame.skiptranslate,
+#goog-gt-tt,
+.goog-te-balloon-frame,
+.goog-text-highlight,
+.goog-te-menu-frame,
+.goog-te-banner-close {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}

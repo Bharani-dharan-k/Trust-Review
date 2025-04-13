@@ -1,0 +1,102 @@
+/* Light Mode (default) */
+.page-section {
+  padding: 40px 50px; /* Reduced top & bottom padding */
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.8;
+  background: linear-gradient(to right, #f0f4ff, #f9fbff);
+  color: #1f2937;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* Dark Mode */
+.dark-mode .page-section {
+  background: linear-gradient(to right, #1f2937, #111827); /* darker gradient */
+  color: #f3f4f6; /* light text */
+}
+
+/* Headings */
+.page-section h2 {
+  font-size: 38px;
+  color: #1d4ed8;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+}
+
+.dark-mode .page-section h2 {
+  color: #60a5fa;
+}
+
+.page-section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #1d4ed8;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.dark-mode .page-section h2::after {
+  background-color: #3b82f6;
+}
+
+/* Paragraphs */
+.page-section p {
+  font-size: 19px;
+  color: #333;
+  margin-bottom: 28px;
+  text-align: justify;
+}
+
+.dark-mode .page-section p {
+  color: #e5e7eb;
+}
+
+/* List Items */
+.page-section ul li {
+  background-color: #ffffff;
+  border-left: 6px solid #2563eb;
+  padding: 16px 22px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  font-size: 17px;
+  color: #1f2937;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.dark-mode .page-section ul li {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  border-left-color: #3b82f6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover Effect */
+.page-section ul li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  background-color: #f0f6ff;
+}
+
+.dark-mode .page-section ul li:hover {
+  background-color: #334155;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .page-section {
+    padding: 30px 20px; /* Reduced further on small screens */
+  }
+
+  .page-section h2 {
+    font-size: 30px;
+  }
+
+  .page-section p,
+  .page-section ul li {
+    font-size: 16px;
+  }
+}
