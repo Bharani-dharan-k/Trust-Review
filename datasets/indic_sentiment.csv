@@ -1,0 +1,5 @@
+text,label,language
+"मस्त प्रोडक्ट, बहुत अच्छा है।",positive,hi
+"खराब क्वालिटी, बेकार है।",negative,hi
+"The product is great, love it!",positive,en
+"Bad experience, won't buy again.",negative,en
