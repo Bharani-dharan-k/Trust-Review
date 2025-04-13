@@ -18,7 +18,7 @@ People frequently rely on online reviews when deciding to purchase a product, vi
 
 ## 🖼️ Preview
 
-![TrustReview UI Screenshot](images/preview.png)
+![TrustReview UI Screenshot](demo/Screenshot%202025-04-13%20141836.png)
 
 ---
 
